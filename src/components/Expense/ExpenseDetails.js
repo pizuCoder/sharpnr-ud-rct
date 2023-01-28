@@ -1,6 +1,6 @@
 import "./ExpenseItem.css"
 
-export default function ExpenseDetails(props) {
+const ExpenseDetails = (props) => {
     const title = props.title
     const amount  = props.amount
     const location  = props.location
@@ -13,4 +13,5 @@ export default function ExpenseDetails(props) {
         </div>
     )
 }
+export default ExpenseDetails
 

@@ -1,7 +1,7 @@
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
 import ExpenseDetails from "./ExpenseDetails";
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
     // const expenseDate = new Date(2023, 1, 28);
     // const expenseTitle = 'Car Insurance';
     // const expenseAmount = 249.67;

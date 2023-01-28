@@ -1,23 +1,36 @@
 // import logo from './logo.svg';
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItem";
-import { expenses } from "./components/ExpenseData";
+// import ExpenseItem from "./components/ExpenseItem";
+import { expenses } from "./components/Expense/ExpenseData";
+import Expenses from './components/Expense/Expenses';
 
-function App() {
+
+const App = () => {
   return (
     <div>
-      <h1>Expense Items:</h1>
-      {expenses.map((item) => (
-        <ExpenseItem
-          key={item.id}
-          title={item.title}
-          amount={item.amount}
-          date={item.date}
-          location={item.location}
-        ></ExpenseItem>
-      ))}
+      <h2>Expense Tracker</h2>
+      <Expenses items={expenses} />
+    </div>
+  );
+}
 
-      {/* <ExpenseItem
+export default App;
+
+
+// return (
+  //   <div>
+  //     <h1>Expense Items:</h1>
+  //     {expenses.map((item) => (
+  //       <ExpenseItem
+  //         key={item.id}
+  //         title={item.title}
+  //         amount={item.amount}
+  //         date={item.date}
+  //         location={item.location}
+  //       ></ExpenseItem>
+  //     ))}
+
+      /* <ExpenseItem
   title = {expenses[1].title}
   amount = {expenses[1].amount}
   date = {expenses[1].date}
@@ -36,8 +49,6 @@ function App() {
   amount = {expenses[3].amount}
   date = {expenses[3].date}
   location = {expenses[3].location}>
-  </ExpenseItem> */}
-    </div>
-  );
-}
-export default App;
+  </ExpenseItem> */
+  //   </div>
+  // );
