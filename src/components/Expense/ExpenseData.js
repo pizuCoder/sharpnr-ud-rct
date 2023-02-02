@@ -6,7 +6,13 @@ export const expenses = [
       date: new Date(2020, 7, 14),
       location: 'Mumbai'
     },
-    { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12), location: 'Pune' },
+
+    { id: 'e2', 
+    title: 'New TV', 
+    amount: 799.49, 
+    date: new Date(2021, 2, 12), 
+    location: 'Pune' },
+
     {
       id: 'e3',
       title: 'Car Insurance',
@@ -14,6 +20,7 @@ export const expenses = [
       date: new Date(2021, 2, 28),
       location: 'Banglore'
     },
+    
     {
       id: 'e4',
       title: 'New Desk (Wooden)',
