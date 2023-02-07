@@ -1,3 +1,4 @@
+
 import "./ExpenseItem.css";
 
 const ExpenseDetails = (props) => {
@@ -6,13 +7,6 @@ const ExpenseDetails = (props) => {
   const location = props.location;
   
   
-
-  
-    
-
-      const handleDelete = () => {
-        console.log('dont know how to useState and useRef yet :)')
-      };
 
   
  
@@ -25,8 +19,10 @@ const ExpenseDetails = (props) => {
         <h2>{title}</h2>
         <h2>{location}</h2>
         <div className="expense-item__price">${amount}</div>
-        <button onClick={handleDelete}>Delete Expense</button>
+        
       </div>
+    
+    
   
   
     
