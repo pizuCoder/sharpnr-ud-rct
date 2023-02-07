@@ -8,9 +8,15 @@ const ExpenseItem = (props) => {
     // const expenseAmount = 249.67;
     // const expenseLocation = 'Mumbai'
     const [show, setShow] = useState(true)
+    const [title, setTitle] = useState(props.title)
+    const [amount, setAmount] = useState(props.amount)
 
-
-  
+    function changeTitle() {
+      setTitle('New Title')
+    }
+    function changeAmount() {
+      setAmount('100')
+    }
     
 
     const handleDelete = () => {
@@ -22,10 +28,12 @@ const ExpenseItem = (props) => {
     {show && <div className= "expense-item">
       <ExpenseDate date={props.date} />
       <ExpenseDetails 
-      title = {props.title}
+      title = {title}
       location = {props.location}
-      amount = {props.amount}/>
+      amount = {amount}/>
       <button onClick={handleDelete}>Delete Expense</button>
+      <button onClick={changeTitle}>Change Title</button>
+      <button onClick={changeAmount}>Change Amount</button>
     </div>}
     </div>
   );
