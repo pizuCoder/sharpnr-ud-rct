@@ -3,12 +3,14 @@ import "./App.css";
 // import ExpenseItem from "./components/ExpenseItem";
 import { expenses } from "./components/Expense/ExpenseData";
 import Expenses from './components/Expense/Expenses';
+import ExpenseForm from "./components/Expense/ExpenseForm";
 
 
 const App = () => {
   return (
     <div>
       <h2>Expense Tracker</h2>
+      <ExpenseForm />
       <Expenses items={expenses} />
     </div>
   );
